@@ -1,8 +1,12 @@
 import React from 'react';
 import Helper from './Helper'
 import Card from './Card'
+import styles from './styles.css'
 
 class Deck extends React.Component{
+    /*
+    Component that manages all cards
+     */
     state = {
         cards: [],
         pickedCards: [],
@@ -84,13 +88,10 @@ class Deck extends React.Component{
         })
 
         return(
-            <div>
-                <div>
-                    {cards}
-                </div>
+            <div id="deck">
+                {cards}
             </div>
-
-        )
+            )
     }
 }
 

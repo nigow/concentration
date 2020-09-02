@@ -1,14 +1,16 @@
-.deck {
-    display: flex;
-    flex-wrap: wrap;
+#deck {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.initialSetting {
-    margin: 10px;
-    padding: 2px;
+#initialSetting {
+    margin: 19px;
+    width: 500px;
 }
 
-.numberInput{
-    width: 50px;
-    height: 10px;
+input[type=number] {
+    width: 200px
 }

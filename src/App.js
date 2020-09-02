@@ -4,6 +4,9 @@ import InitialSetting from "./Components/InitialSetting";
 import styles from './Components/styles.css'
 
 class App extends React.Component{
+    /*
+    Concentration game managed by React state
+     */
     state = {
         showDeck: false,
         maxNum: -1
@@ -21,7 +24,7 @@ class App extends React.Component{
     render(){
         let deck = null;
         if(this.state.showDeck){
-            deck = <Deck className={styles.deck} maxNum={this.state.maxNum}/>;
+            deck = <Deck maxNum={this.state.maxNum}/>;
         }
         return(
             <div>
