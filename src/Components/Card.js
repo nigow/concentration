@@ -4,7 +4,7 @@ class Card extends React.Component{
 
     render() {
         let style = {
-            padding: "8px",
+            padding: "80px",
             cursor: "pointer",
             border: "1px solid black",
             backgroundColor: "black",
@@ -12,7 +12,10 @@ class Card extends React.Component{
             color: "white",
             float: "left",
             width: "calc(33.333% – 10px)",
-            margin: "0 30px 30px 0"
+            // margin: "0 30px 30px 0"
+            margin: "0 30px 30px 0",
+            borderRadius: "13px 13px 13px 13px",
+            fontSize: "30px"
         };
         style.backgroundColor = this.props.color;
 
