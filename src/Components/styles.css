@@ -1,0 +1,14 @@
+.deck {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.initialSetting {
+    margin: 10px;
+    padding: 2px;
+}
+
+.numberInput{
+    width: 50px;
+    height: 10px;
+}
